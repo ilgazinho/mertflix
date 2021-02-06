@@ -1,0 +1,19 @@
+.navbar {
+  background-color: $black;
+  padding: 20px;
+
+  .items {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
+  .item {
+    font-size: 36px;
+    font-weight: 600;
+    a {
+      text-decoration: none;
+      color: $primary;
+    }
+  }
+}

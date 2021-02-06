@@ -1,0 +1,9 @@
+.main {
+  max-width: 1440px;
+  margin: 0 auto;
+
+  @import './Navbar/index.scss';
+  @import './Movie/index.scss';
+  @import './Movies/index.scss';
+  @import './Button/index.scss';
+}
