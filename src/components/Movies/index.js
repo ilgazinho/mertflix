@@ -2,22 +2,24 @@ import { useState, useEffect } from 'react';
 
 import { Movie } from '../Movie/index';
 
-const BASE_API = `http://www.omdbapi.com/?apikey=${process.env.REACT_APP_OMDB_API_KEY}&s=avengers`;
+const DISCOVER_API = `https://api.themoviedb.org/3/trending/all/week?api_key=${process.env.REACT_APP_TMDB_API_KEY}`;
+
+console.log(DISCOVER_API);
 
 export const Movies = () => {
   const [movies, setMovies] = useState([]);
 
   useEffect(() => {
-    fetch(BASE_API)
+    fetch(DISCOVER_API)
       .then((res) => res.json())
-      .then((data) => setMovies(data.Search));
+      .then((data) => setMovies(data.results));
   }, []);
 
   return (
     <div className="movies">
       {movies.map((movie) => (
-        <Movie key={movie.imdbID} poster={movie.Poster}>
-          {movie.Title}
+        <Movie key={movie.id} poster={movie.poster_path}>
+          {movie.title} {movie.name}
         </Movie>
       ))}
     </div>
