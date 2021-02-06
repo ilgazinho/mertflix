@@ -18,7 +18,7 @@ export const Movies = () => {
   return (
     <div className="movies">
       {movies.map((movie) => (
-        <Movie key={movie.id} poster={movie.poster_path}>
+        <Movie key={movie.id} {...movie}>
           {movie.title} {movie.name}
         </Movie>
       ))}
