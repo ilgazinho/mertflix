@@ -19,7 +19,7 @@ export const Movies = () => {
     <div className="movies">
       {movies.map((movie) => (
         <Movie key={movie.id} {...movie}>
-          {movie.title} {movie.name}
+          {movie.title ? movie.title : movie.name}
         </Movie>
       ))}
     </div>
