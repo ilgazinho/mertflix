@@ -1,11 +1,12 @@
 import { MenuItem } from '../MenuItem/index';
 
-const menus = ['Movies', 'Series', 'More'];
+const menus = ['Discover', 'Movies', 'Series'];
 
 export const Menu = (props) => {
   const onChangeSearchVal = (val) => {
     props.handleNavSearch(val);
   };
+
   return (
     <div className="menu">
       <div className="search">
