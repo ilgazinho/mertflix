@@ -24,9 +24,14 @@ export const Main = () => {
     fetchMovies(query);
   };
 
+  const handleLogoClick = (e) => {
+    e.preventDefault();
+    handleSearch('');
+  };
+
   return (
     <div className="main">
-      <Navbar handleSearch={handleSearch} />
+      <Navbar handleSearch={handleSearch} handleLogoClick={handleLogoClick} />
       <Movies movies={movies} />
     </div>
   );

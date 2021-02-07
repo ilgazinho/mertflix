@@ -4,7 +4,7 @@ import { Menu } from '../Menu/index';
 export const Navbar = (props) => {
   return (
     <div className="navbar">
-      <Logo />
+      <Logo handleLogoClick={props.handleLogoClick} />
       <Menu handleNavSearch={props.handleSearch} />
     </div>
   );
