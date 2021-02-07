@@ -61,6 +61,8 @@
     bottom: 0;
     right: 0;
     padding: 1.5rem;
+    overflow: auto;
+    max-height: 100%;
     transform: translateY(100%);
     transition: all 0.3s ease-in-out;
     border-radius: 5px;

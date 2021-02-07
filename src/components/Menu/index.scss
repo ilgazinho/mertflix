@@ -1,4 +1,18 @@
 .menu {
+  display: flex;
+  align-items: center;
+
+  .search {
+    input {
+      font-family: inherit;
+      padding: 0.2rem 0.5rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
   .menu-items {
     display: flex;
     list-style: none;
