@@ -10,7 +10,7 @@ export const Movie = ({
   const getMovieImg = (isPosterPath) => {
     if (isPosterPath) {
       return poster_path === null
-        ? 'https://via.placeholder.com/500x750.png'
+        ? 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80'
         : IMG_API + poster_path;
     }
     return backdrop_path === null
