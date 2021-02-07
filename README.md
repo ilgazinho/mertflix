@@ -3,6 +3,10 @@
 This is a simple project made by [me](https://m2t.dev) for learning purposes.
 I used [React](https://reactjs.org/), [SASS](https://sass-lang.com/) and a movie API called [TMDB](https://www.themoviedb.org/).
 
+[Live Demo](https://mertflix.netlify.app/)
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6282557b-37d1-41c5-9ce7-1cfcf0861e5c/deploy-status)](https://app.netlify.com/sites/mertflix/deploys)
+
 ## Once you download the project
 
 1- You will need your own [API key](https://developers.themoviedb.org/3/getting-started/introduction) for running the project locally.
