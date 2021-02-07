@@ -6,9 +6,14 @@
     input {
       font-family: inherit;
       padding: 0.2rem 0.5rem;
+      max-width: 200px;
 
       &:focus {
         outline: none;
+      }
+
+      &[type='search' i]::-webkit-search-cancel-button {
+        cursor: pointer;
       }
     }
   }
